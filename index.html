@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BHC 반응형웹</title>
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <link href="./css/base.css" rel="stylesheet" type="text/css">
+
+  <!-- pc서식  -->
+  <link href="./css/pc.css" rel="stylesheet" type="text/css">
+
+  <!-- 태블릿 서식 -->
+  <link href="./css/tablet.css" rel="stylesheet" type="text/css">
+
+  <!-- 모바일 서식 -->
+  <link href="./css/mobile.css" rel="stylesheet" type="text/css">
+
+  <!-- 스와이퍼 슬라이드 서식 -->
+  <link href="./css/swiper.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+  <!-- css3속성 사용시 공급업체 접두가 자동으로 붙여주는 스크립트 소스 -->
+  <script src="./script/prefixfree.min.js"></script>
+
+  <!-- 스와이퍼 슬라이드 스크립트 소스 -->
+  <script src="./script/swiper.js"></script>
+
+   <!-- 제이쿼리 라이브러리 연결 -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+   <!-- 제이쿼리 -->
+   <script>
+     $(document).ready(function(){
+
+       let gnb = $('.header_bottom >.gnb > ul > li > a'); // 메인메뉴
+
+       // 메인메뉴를 클릭하면 아래 내용을 실행한다.
+         $(fa-times).click(function(){
+         // 현재메뉴의 다음 요소를 선택하여 슬라이드 토글한다.
+         $(this).next().slideToggle();
+
+         $(this).find('i').toggleClass('act');
+
+         $(this).toggleClass('act01');
+       });
+
+     });
+   </script>
+
+</head>
+<body>
+
+  <!-- 헤더영역 시작 -->
+  <header>
+    <!-- 토글버튼 -->
+    <input type="checkbox" id="toggle">
+
+    <!-- 토글 닫기버튼 -->
+    <label for="toggle" class="fas fa-times"></label>
+    <label for="toggle" class="fas fa-bars"></label>
+
+
+    <div class="header_top">
+    
+      <nav class="lnb">
+        <ul>
+          <li><a href="login.html" title="로그인">로그인</a></li>
+          <li><a href="join.html" title="회원가입">회원가입</a></li>
+          <li><a href="order.html" title="점주로그인">점주로그인</a></li>
+        </ul> 
+      </nav>
+        <div id = "number"><a href="tel:1577-5577">
+          <img src="./img/icon/icon_call.png" alt="전화주문하기">
+          <p class = "c_01">주문전화</p>
+          <p class = "c_02">1577-557</p>
+        </a>
+        </div>
+
+        <h1>
+          <a href="index.html" title="메인페이지로 바로가기">
+            <img src="./img/icon/logo.png" alt="상단로고">
+          </a>
+        </h1>
+
+        
+      <div id="dv_button">
+        <a href="index.html" title="온라인 주문하기 페이지로 바로가기">
+            <img src="./img/icon/h_button02.png" alt="온라인 주문하기"></a>
+      </div>
+    </div>
+
+    <div class="header_bottom">
+      <nav class="gnb">
+        <ul>
+          <li><a href="sub01.html" title="메뉴">메뉴</a>
+            <ul class="sub">
+              <li><a href="new_best.html" title="NEW&BEST">NEW&#32;&#38;&#32;BEST</a></li>
+              <li><a href="chichken.html" title="치킨">치킨</a></li>
+              <li><a href="One_person.html" title="1인 Set">1인&#32;Set</a></li>
+              <li><a href="side.html" title="사이드">사이드</a></li>
+              <li><a href="allergy.html" title="알레르기 정보">알레르기 정보</a></li>
+            </ul>
+          </li>
+
+          <li><a href="sub02.html" title="매장안내">매장안내</a>
+            <ul class="sub">
+              <li><a href="korean_store.html" title="국내매장">국내매장</a></li>
+              <li><a href="foreign_store.html" title="해외매장">해외매장</a></li>
+            </ul>
+          </li>
+
+          <li><a href="sub03.html" title="이벤트">이벤트</a>
+            <ul class="sub">
+              <li><a href="event.html" title="오늘생산배송">진행중인&#32;이벤트</a></li>
+              <li><a href="end_event.html" title="마감이벤트">마감&#32;이벤트</a></li>
+              <li><a href="winner.html" title="당첨자발표">당첨자&#32;발표</a></li>
+            </ul>
+          </li>
+
+          <li><a href="sub04.html" title="E-쿠폰">E-쿠폰</a>
+            <ul class="sub">
+              <li><a href="#" title="E-쿠폰">E-쿠폰</a></li>
+              <li><a href="#" title="E-쿠폰메뉴">E-쿠폰메뉴</a></li>
+              <li><a href="#" title="E-쿠폰문의">E-쿠폰문의</a></li>
+            </ul>
+          </li>
+
+          <li><a href="sub05.html" title="창업안내">창업안내</a>
+            <ul class="sub">
+              <li><a href="#" title="왜BHC인가">왜&#32;BHC인가</a></li>
+              <li><a href="#" title="창업안내">창업안내</a></li>
+              <li><a href="#" title="창업FAQ">창업&#32;FAQ</a></li>
+            </ul>
+          </li>
+
+          <li><a href="sub06.html" title="BHC스토리">BHC스토리</a>
+            <ul class="sub">
+              <li><a href="#" title="BHC스토리">BHC스토리</a></li>
+              <li><a href="#" title="CEO인사말">CEO인사말</a></li>
+              <li><a href="#" title="공지사항">공지사항</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- 콘텐츠영역 시작 -->
+  <main>
+    <article class="slide">
+      <h2>메인슬라이드</h2>
+      <div class="swiper-container main_slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/main01.jpg" alt="신규회원가입안내_메인페이지"></div>
+          <div class="swiper-slide"><img src="./img/main02.jpg" alt="BHC닭가슴살홍보_메인페이지"></div>
+          <div class="swiper-slide"><img src="./img/main03.jpg" alt="치킨테스트_메인페이지"></div>
+          <div class="swiper-slide"><img src="./img/main04.jpg" alt="요기요주문하기_메인페이지"></div>
+          <div class="swiper-slide"><img src="./img/main05.jpg" alt="경품이벤트안내_메인페이지"></div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </article>
+
+    <div class="m_button">
+      <div class="bt01">
+        <a href="#" title="온라인 주문">
+          <img src="./img/icon/icon_chicken_leg_white.png" alt="온라인주문하기">온라인주문</a>
+      </div>
+      <div class="bt02">
+        <a href="#" title="선물하기">
+          <img src="./img/icon/icon_gift_box_white.png" alt="선물하기">선물하기</a>
+      </div>
+      <div class="bt03">
+        <a href="#" title="가맹정찾기">
+          <img src="./img/icon/icon_store_white.png" alt="가맹점찾기">가맹점찾기</a>
+      </div>
+      </div>
+    
+     
+
+      <article class="bg_box">
+        <div class="menu">
+        <div class="mn_box">
+          <div class="mn_txt">
+          <h3>CHICKEN</h3>
+          <p>명불허전! 바삭함, 고소함 가득!</p>
+          <a href="#" title="MORE" class="button">MORE</a>
+          </div>
+
+          <div class="mn_pic">
+              <a href="#" title="치킨 메뉴"><img src="./img/menu_01.jpg" alt="chicken"></a>
+          </div>
+        </div>
+
+        <div class="mn_box">
+          <div class="mn_txt">
+          <h3>SIDE</h3>
+          <p>놓칠&#32;수&#32;없는&#32;맛!</p>
+          <a href="#" title="MORE" class="button">MORE</a>
+          </div>
+
+          <div class="mn_pic">
+              <a href="#" title="치킨 메뉴"><img src="./img/menu_02.jpg" alt="chicken"></a>
+          </div>
+        </div>
+
+        <div class="mn_box">
+          <div class="mn_txt">
+          <h3>COMBO</h3>
+          <p>다리는&#32;사랑입니다♥</p>
+          <a href="#" title="MORE" class="button">MORE</a>
+          </div>
+
+          <div class="mn_pic">
+              <a href="#" title="치킨 메뉴"><img src="./img/menu_03.jpg" alt="chicken"></a>
+          </div>
+        </div>
+
+        <div class="mn_box">
+          <div class="mn_txt">
+          <h3>1인&#32;SET</h3>
+          <p>오직&#32;당신만을&#32;위한&#32;치느님</p>
+          <a href="#" title="MORE" class="button">MORE</a>
+          </div>
+
+          <div class="mn_pic">
+              <a href="#" title="치킨 메뉴"><img src="./img/menu_04.jpg" alt="chicken"></a>
+          </div>
+        </div>
+
+        </div>
+      </article>
+
+
+    <article class="shop_box">
+      <h2>굿즈샵</h2>
+      <div class="shop_bn">
+        <a href="#" title="굿즈샵 바로가기"><img src="./img/banner_bhc.jpg" alt="goodsshop"></a>
+        <a href="#" title="굿즈샵 바로가기" class="shop_bt">굿즈샵&#32;바로가기</a>
+      </div>
+    </article>
+
+
+    <article class="instagram">
+
+      <div class="insta_box">
+        <div class="insta_01">
+          <h2>BHC&#32;Instagram</h2>
+          <a href="#" title="1인치킨세트" class="btn_more"><img src="./img/icon/btn_more.png" alt="더보기"></a>
+        </div>
+        
+        <div class="insta_02">
+          <ul>
+            <li>#혼치세트</li>
+            <li>#신상치킨</li>
+            <li>#뿌링뿌링</li>
+            <li>#콤보개이득</li>
+          </ul>
+        </div>
+        
+        <div class="insta_03">
+          <div class="con_left">
+          <a href="#" class="con_01"><img src="./img/contents_left.jpg" alt="1인세트"></a>
+          </div>
+
+          <div class="con_right">
+            <div class="con_r01">
+              <a href="#" class="c1" title="골드킹세트 자세히보기"><img src="./img/con_1.jpg" alt="골드킹"></a>
+
+                <ul class="set_01">
+                  <li class="name">
+                    <a href="#" title="골드킹세트 자세히보기"><img src="./img/icon/best_icon.png" alt="best menu"></a>
+                    <a href="#" title="골드킹세트 자세히보기"><span>골드킹(반)+치즈볼</span></a>
+                  </li>
+
+                  <li class="info">
+                    <p>[치킨&#32;반마리&#32;제공]&#32;단짠단짠<br>
+                    숙성간장과&#32;꿀의&#32;황금비율</p>
+                  </li>
+
+                  <li class="price">
+                    <p>15,000원</p>
+                  </li>
+                </ul>
+            </div>
+
+            <div class="con_r01">
+              <a href="#" class="c1" title="치즈볼세트 자세히 보기"><img src="./img/con_2.jpg" alt="치즈볼"></a>
+
+                <ul class="set_01">
+                  <li class="name">
+                    <a href="#" title="치즈볼세트 자세히보기"><img src="./img/icon/new_icon.png" alt="new menu"></a>
+                    <a href="#" title="치즈볼세트 자세히보기"><span>치즈볼&#32;다&#32;내꺼&#32;Set</span></a>
+                  </li>
+
+                  <li class="info">
+                    <p>[세트&#32;15개&#32;제공]&#32;인기만점&#32;달콤바삭<br>
+                    모짜렐라&#32;치즈볼&#32;세트&#32;출시</p>
+                  </li>
+
+                  <li class="price">
+                    <span class="dis_01">15,000원</span>
+                    <span class="dis_02">13,000원</span>
+                  </li>
+                </ul>
+            </div>
+
+            <div class="con_r01">
+              <a href="#" class="c1" title="맛초킹세트 자세히보기"><img src="./img/con_3.jpg" alt="맛초킹"></a>
+
+                <ul class="set_01">
+                  <li class="name">
+                    <a href="#" title="맛초킹세트 자세히보기"><img src="./img/icon/hot_icon.png" alt="hot menu"></a>
+                    <a href="#" title="맛초킹세트 자세히보기"><span>맛초킹(반)+치즈볼</span></a>
+                  </li>
+
+                  <li class="info">
+                    <p>[치킨&#32;반마리&#32;제공]&#32;매콤짭짤,<br>
+                      밥과&#32;먹기&#32;딱&#32;좋은&#32;완벽조합</p>  
+                  </li>
+
+                  <li class="price">
+                    <p>15,000원</p>
+                  </li>
+                </ul>
+            </div>
+          </div>  
+        </div>
+      </div>  
+    </article>
+
+    <div class="sns_box">
+      <div class="w1200">
+        <div class="sns_left">
+        <em><img src="./img/icon/mini_logo.png" class="sns_logo" alt="bhc">&#32;SNS</em>
+        <p>BHC의&#32;빠른&#32;소식<br>
+        SNS로&#32;만나보세요.</p>
+        </div>
+        <div class="sns_right">
+          <ul>
+            <li>
+              <a href="http://pf.kakao.com/_ExlBVl" target="_blank">
+                <div class="sns_img"></div>
+                <span>카카오톡</span>
+            </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/bhc_chicken_official/" target="_blank">
+                <div class="sns_img"></div>
+                <span>인스타그램</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/channel/UCvohsyXlehjoLHWuffue5IA" target="_blank">
+                <div class="sns_img"></div>
+                <span>유튜브</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.facebook.com/bhcchicken" target="_blank">
+                <div class="sns_img"></div>
+                <span>페이스북</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="go_top">
+      <ul>
+        <li>
+          <a href="#" title="상단으로 이동하기">
+            <img src="./img/icon/go-top.png" alt="top_button">
+          </a>
+        </li>
+    </ul>
+    </div>
+
+  </main>
+
+  <!-- 푸터영역 시작 -->
+  <footer>
+    <div class="f_top"></div>
+
+      <div class="f_bottom">
+        <div class="f_info">
+          <ul class="f_lnb">
+            <li><a href="#" title="">이용약관</a></li>
+            <li><a href="#" title="">개인정보처리방침</a></li>
+            <li><a href="#" title="">이메일무단수집거부</a></li>
+            <li><a href="#" title="">찾아오시는길</a></li>
+            <li><a href="#" title="">사이트맵</a></li>
+          </ul>
+
+          <dl>
+            <dt>푸터영역</dt>
+            <dd class="siteurl">
+              <label for="family">패밀리사이트</label>
+              <select onChange="siteUrl(this);" id="family">
+                <option value="">Family Site</option>
+                <option value="http://www.bhcgroup.co.kr/">BHC그룹</option>
+                <option value="http://www.changgo43.co.kr/00_main/main.asp">창고43</option>
+                <option value="http://www.bkfood.kr/renew/">큰맘할매순대국</option>
+                <option value="http://www.gram-gram.com/renew/">그램그램</option>
+                <option value="http://jokbalstore.com/">족발상회</option>
+              </select>
+            </dd>
+              
+            <dd class="sns">
+              <a href="#" title="페이스북" class="fab fa-facebook"><span>페이스북</span></a>
+              <a href="#" title="인스타" class="fab fa-instagram"><span>인스타그램</span></a>
+              <a href="#" title="유튜브" class="fab fa-youtube"><span>유튜브</span></a>
+            </dd>
+          
+          </dl>
+        </div>
+        <address>
+          <p class="a_info">서울시 송파구 올림픽로 299(신천동 7-23번지) 대한제당B/D 2층 &#65372; TEL 02-6204-3484 &#65372; 사업자등록번호 215-86-61559<br> 
+            통신판매업 : 제 2014-서울송파-0593호<br>
+            Copyright&copy;2013 BHC ALL RIGHT RESERVED</p>
+        </address>
+      </div>
+  </footer>
+  
+  <script>
+    var swiper = new Swiper(".main_slide", {
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+
+      function siteUrl(a){    //사용자가 select태그에서 option을 선택하면 값을 전달받는다.
+      if(a.value!='none'){ //만약에 사용자가 선택목록을 선택하였을 때문 아래 내용을 실행한다.
+        window.open(a.value, '_self'); //사이트 연결을 실행한다.
+        a.value='none'; //값을 초기화한다.
+      }else{            // 그렇지 않으면
+        return;         //실행하지 않는다.
+      }
+    }
+  </script>
+</body>
+</html>
