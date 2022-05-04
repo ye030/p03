@@ -30,25 +30,11 @@
 
    <!-- 제이쿼리 라이브러리 연결 -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+   <script src="./script/main.js"></script>
 
-   <!-- 제이쿼리 -->
-   <script>
-     $(document).ready(function(){
+   <!-- 파비콘 -->
+  <link rel="shortcut icon" href="./img/icon_favicon.png">
 
-       let gnb = $('.header_bottom >.gnb > ul > li > a'); // 메인메뉴
-
-       // 메인메뉴를 클릭하면 아래 내용을 실행한다.
-         $(fa-times).click(function(){
-         // 현재메뉴의 다음 요소를 선택하여 슬라이드 토글한다.
-         $(this).next().slideToggle();
-
-         $(this).find('i').toggleClass('act');
-
-         $(this).toggleClass('act01');
-       });
-
-     });
-   </script>
 
 </head>
 <body>
@@ -450,14 +436,15 @@
         },
       });
 
-      function siteUrl(a){    //사용자가 select태그에서 option을 선택하면 값을 전달받는다.
-      if(a.value!='none'){ //만약에 사용자가 선택목록을 선택하였을 때문 아래 내용을 실행한다.
-        window.open(a.value, '_self'); //사이트 연결을 실행한다.
-        a.value='none'; //값을 초기화한다.
-      }else{            // 그렇지 않으면
-        return;         //실행하지 않는다.
+      function siteUrl(a){    
+      if(a.value!='none'){ 
+        window.open(a.value, '_self'); 
+        a.value='none'; 
+      }else{            
+        return;         
       }
     }
   </script>
+
 </body>
 </html>
